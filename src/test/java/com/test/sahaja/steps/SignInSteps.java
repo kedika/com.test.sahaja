@@ -20,7 +20,8 @@ public class SignInSteps {
     @Given("the user has logged in with {string}")
     public void theUserHasLoggedIn(String user) {
         homePage.clickSignIn();
-        signinPage.successfulSignIn(World.userDetailsJson.get("UserName").toString(),World.userDetailsJson.get("password").toString());
+        World.userJson = (JSONObject) World.userDetailsJson.get(user);
+        signinPage.successfulSignIn(String.valueOf(World.userJson.get("username")),String.valueOf(World.userJson.get("password")));
     }
 
 

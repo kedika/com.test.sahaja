@@ -21,7 +21,7 @@ public class RegistrationPage extends BasePage {
     }
 
     public String getFirstName(){
-        return waitForExpectedElement(firstNameTB).getText();
+        return waitForExpectedElement(firstNameTB).getAttribute("value");
     }
 
     public void enterCurrentPwd(String pwd) {

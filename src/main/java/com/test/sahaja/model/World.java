@@ -6,6 +6,7 @@ import org.json.simple.JSONObject;
 public class World {
 
     public static JSONObject userDetailsJson;
+    public static JSONObject userJson;
 
     /**
      * Generates random alphanumeric String.

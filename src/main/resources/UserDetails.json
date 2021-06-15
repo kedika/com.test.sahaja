@@ -1,7 +1,7 @@
 {
   "TestUser": {
-    "UserName": "kedikasahaja@gmail.com",
-    "password": "codility",
+    "username": "kedikasahaja@gmail.com",
+    "password": "Codility",
     "Address": "Woking"
   }
 }

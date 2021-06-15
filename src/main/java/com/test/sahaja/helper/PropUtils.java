@@ -48,18 +48,19 @@ public class PropUtils {
 
 
     /**
-     * Load application properties file
+     * Load properties file
      *
      * @param configPropertyFileLocation
      **/
 
     public static void loadRunConfigProps(String configPropertyFileLocation) {
-        environmentProps = new Properties();
         try (InputStream inputStream = PropUtils.class.getClassLoader().getResourceAsStream(configPropertyFileLocation)) {
             if(configPropertyFileLocation.contains("application.properties")){
+                environmentProps = new Properties();
                 environmentProps.load(inputStream);
                 environmentProps.list(out);
             }else{
+                successProps = new Properties();
                 successProps.load(inputStream);
                 successProps.list(out);
             }

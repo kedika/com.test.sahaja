@@ -1,0 +1,142 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10718000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on \"Home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.test.sahaja.steps.HomePageSteps.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T01:35:11.409Z",
+        "line": 9,
+        "name": "Update firstname in my personal information",
+        "description": "",
+        "id": "update-personal-information-in-my-account;update-firstname-in-my-personal-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5105000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user has logged in with \"TestUser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestUser\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.test.sahaja.steps.SignInSteps.theUserHasLoggedIn(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3430000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user update \"firstName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firstName\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.test.sahaja.steps.UserRegistrationSteps.theUserUpdate(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "should be able to update with success message",
+            "match": {
+              "location": "com.test.sahaja.steps.UserRegistrationSteps.shouldBeAbleToUpdateWithSuccessMessage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2874000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the updated \"firstName\" should appear in personal info page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firstName\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.test.sahaja.steps.UserRegistrationSteps.theUpdatedShouldAppearInPersonalInfoPage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@PersonalInfo"
+          }
+        ]
+      }
+    ],
+    "name": "Update personal information in my account",
+    "description": "  As a signed up user,\n  I should be able to update personal information successfully",
+    "id": "update-personal-information-in-my-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/updatePersonalInfo.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@PersonalInfo",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  }
+]

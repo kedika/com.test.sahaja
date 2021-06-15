@@ -87,7 +87,8 @@ public class DriverHelper extends EventFiringWebDriver {
     }
 
     public static void loadPage() {
-        DRIVER.navigate().to(BASE_PATH);
+        //Thread.sleep(3000);
+        DRIVER.get(BASE_PATH);
         DRIVER.manage().window().maximize();
     }
 

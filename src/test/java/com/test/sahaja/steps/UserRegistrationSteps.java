@@ -22,7 +22,7 @@ public class UserRegistrationSteps {
         registrationPage.clickPersonalInfoLink();
         firstName = World.randomAlphabetic(9);
         registrationPage.updateFirstName(firstName);
-        registrationPage.enterCurrentPwd(World.userDetailsJson.get("password").toString());
+        registrationPage.enterCurrentPwd(String.valueOf(World.userJson.get("password")));
         registrationPage.saveChanges();
     }
 
@@ -35,7 +35,7 @@ public class UserRegistrationSteps {
     public void theUpdatedShouldAppearInPersonalInfoPage(String field) {
         registrationPage.clickBackToAccounts();
         registrationPage.clickPersonalInfoLink();
-        Assert.assertEquals(firstName, registrationPage.getFirstName());
+        Assert.assertEquals(firstName.toLowerCase(), registrationPage.getFirstName().toLowerCase());
 
     }
 }
