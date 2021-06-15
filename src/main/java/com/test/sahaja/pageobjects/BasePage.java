@@ -3,6 +3,7 @@ package com.test.sahaja.pageobjects;
 import com.test.sahaja.helper.DriverHelper;
 import lombok.Getter;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -108,6 +109,17 @@ public class BasePage {
     public void selectElement(By by, String text) {
         Select select = new Select(driver.findElement(by));
         select.selectByVisibleText(text);
+    }
+
+    /**
+    * Mouse House element
+    *
+    * @param by element locator
+    * */
+    public void mouseHover(By by){
+        Actions actions = new Actions(driver);
+        WebElement element = waitForExpectedElement(by);
+        actions.moveToElement(element).perform();
     }
 
 }

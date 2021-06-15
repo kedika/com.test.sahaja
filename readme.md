@@ -43,8 +43,6 @@ Tags:
 # Report
 HTML Report will be generated at /target/report/cucumber.html
 
-# Screenshot of Execution Report
-
 # Future Improvements
 - Take Screenshot for failing tests
 - Parallel Test execution to reduce test run time

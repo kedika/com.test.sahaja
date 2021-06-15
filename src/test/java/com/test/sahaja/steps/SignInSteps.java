@@ -25,8 +25,10 @@ public class SignInSteps {
     }
 
 
-    @When("proceeds to the checkout and registers as new user")
+    @When("proceeds to the checkout and signin with existing user")
     public void proceedsToTheCheckoutAndRegistersAsNewUser() {
+        World.userJson = (JSONObject) World.userDetailsJson.get("TestUser");
+        signinPage.successfulSignIn(String.valueOf(World.userJson.get("username")),String.valueOf(World.userJson.get("password")));
 
     }
 }
