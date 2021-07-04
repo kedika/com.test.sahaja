@@ -11,7 +11,7 @@ public class HomePageSteps {
         this.homePage = homePage;
     }
 
-    @Given("the user is on {string} page")
+    @Given("the customer is on {string} page")
     public void theUserIsOnPage(String page) throws InterruptedException {
         if (page.equals("Home")) {
             homePage.startPage();

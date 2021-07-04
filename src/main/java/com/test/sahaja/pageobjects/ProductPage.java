@@ -5,8 +5,10 @@ import org.openqa.selenium.By;
 public class ProductPage extends BasePage{
 
     private By tshirtMenu = By.xpath("//div/ul/li/a[contains(@title, 'T-shirts')]");
-    private By addToCart = By.cssSelector(".ajax_add_to_cart_button");
-    private By product = By.xpath("//a[contains(text(),'Faded Short Sleeve T-shirts')]");
+    private By dressesMenu = By.xpath("//div/ul/li/a[contains(@title, 'Dresses')]");
+    private By summerDresses = By.xpath("(//ul/li/a[contains(@title, 'Summer Dresses')])[2]");
+    private By addToCart = By.name("Submit");
+    private By product = By.xpath("//a[contains(text(),'Printed Chiffon Dress')]");
     private By proceedToCheckout = By.xpath("//*[contains(@title, 'Proceed to checkout')]");
     private By proceed = By.xpath("//p/a[contains(@title, 'Proceed to checkout')]");
 
@@ -14,8 +16,13 @@ public class ProductPage extends BasePage{
         waitForExpectedElement(tshirtMenu).click();
     }
 
+    public void clickSummerDresses(){
+        mouseHover(dressesMenu);
+        waitForExpectedElement(summerDresses).click();
+    }
+
     public void selectProduct(){
-        mouseHover(product);
+        waitForExpectedElement(product).click();
         waitForExpectedElement(addToCart).click();
         waitForExpectedElement(proceedToCheckout).click();
         waitForExpectedElement(proceed).click();

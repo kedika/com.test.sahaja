@@ -18,4 +18,9 @@ public class ProductPageSteps {
     }
 
 
+    @Given("customer adds {string} summer dress to the cart")
+    public void customerAddsSummerDressToTheCart(String arg0) {
+        productPage.clickSummerDresses();
+        productPage.selectProduct();
+    }
 }

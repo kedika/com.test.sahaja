@@ -11,16 +11,16 @@
         "steps": [
           {
             "result": {
-              "duration": 12395000000,
+              "duration": 26588000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user is on \"Home\" page",
+            "name": "the customer is on \"Home\" page",
             "match": {
               "arguments": [
                 {
                   "val": "\"Home\"",
-                  "offset": 15
+                  "offset": 19
                 }
               ],
               "location": "com.test.sahaja.steps.HomePageSteps.theUserIsOnPage(java.lang.String)"
@@ -30,35 +30,35 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-15T03:11:05.853Z",
+        "start_timestamp": "2021-07-04T18:04:22.885Z",
         "line": 9,
         "name": "HomePage to Checkout journey with Guest user",
         "description": "",
-        "id": "order-t-shirt;homepage-to-checkout-journey-with-guest-user",
+        "id": "order-summer-t-shirt;homepage-to-checkout-journey-with-guest-user",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8299000000,
+              "duration": 21075000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "customer adds \"Faded Short Sleeve T-shirts\" to the cart",
+            "name": "customer adds \"Printed Chiffon Dress\" summer dress to the cart",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Faded Short Sleeve T-shirts\"",
+                  "val": "\"Printed Chiffon Dress\"",
                   "offset": 14
                 }
               ],
-              "location": "com.test.sahaja.steps.ProductPageSteps.customerAddsToTheCart(java.lang.String)"
+              "location": "com.test.sahaja.steps.ProductPageSteps.customerAddsSummerDressToTheCart(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3674000000,
+              "duration": 5607000000,
               "status": "passed"
             },
             "line": 11,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 5422000000,
+              "duration": 6944000000,
               "status": "passed"
             },
             "line": 12,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 7733000000,
+              "duration": 5636000000,
               "status": "passed"
             },
             "line": 13,
@@ -103,11 +103,11 @@
         ]
       }
     ],
-    "name": "Order T shirt",
+    "name": "Order Summer T shirt",
     "description": "  As a customer,\n  I should be able add products to the cart and proceed to order history",
-    "id": "order-t-shirt",
+    "id": "order-summer-t-shirt",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/orderTshirt.feature",
+    "uri": "file:src/test/resources/features/orderSummerTshirt.feature",
     "tags": [
       {
         "name": "@Regression",
@@ -119,146 +119,6 @@
       },
       {
         "name": "@Order",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 13
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7356000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user is on \"Home\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Home\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.test.sahaja.steps.HomePageSteps.theUserIsOnPage(java.lang.String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-15T03:11:43.471Z",
-        "line": 9,
-        "name": "Update firstname in my personal information",
-        "description": "",
-        "id": "update-personal-information-in-my-account;update-firstname-in-my-personal-information",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6207000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user has logged in with \"TestUser\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"TestUser\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.test.sahaja.steps.SignInSteps.theUserHasLoggedIn(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4540000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user update \"firstName\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"firstName\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.test.sahaja.steps.UserRegistrationSteps.theUserUpdate(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 80000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "should be able to update with success message",
-            "match": {
-              "location": "com.test.sahaja.steps.UserRegistrationSteps.shouldBeAbleToUpdateWithSuccessMessage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5965000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the updated \"firstName\" should appear in personal info page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"firstName\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.test.sahaja.steps.UserRegistrationSteps.theUpdatedShouldAppearInPersonalInfoPage(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@PersonalInfo"
-          }
-        ]
-      }
-    ],
-    "name": "Update personal information in my account",
-    "description": "  As a signed up user,\n  I should be able to update personal information successfully",
-    "id": "update-personal-information-in-my-account",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/updatePersonalInfo.feature",
-    "tags": [
-      {
-        "name": "@Regression",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@PersonalInfo",
         "type": "Tag",
         "location": {
           "line": 1,
