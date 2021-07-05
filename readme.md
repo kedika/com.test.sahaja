@@ -1,6 +1,6 @@
 # Automation Tests
 
-This test suite contains order Tshirt and update personal information tests
+This test suite contains scenario to order Summer Tshirt test.
 
 # Framework Tools and Libraries
 * **BDD Test Specification**: Cucumber (Gherkin), structured English sentences
